@@ -6,9 +6,11 @@
         <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
                      WidthRequest="300">
             <Image Source="LogoIntec.png" HeightRequest="140" Margin="0, 15"/>
-            <Entry Placeholder="Email" />
-            <Entry Placeholder="Password" IsPassword="True"/>
-            <Button Text="LogIn" BackgroundColor="Red" TextColor="White" CornerRadius="10"/>
+            <Entry Placeholder="Email" Text="{Binding user.Email}"/>
+            <Entry Placeholder="Password" Text="{Binding user.Password}" 
+                   IsPassword="True"/>
+            <Button Text="LogIn" BackgroundColor="Red" TextColor="White" 
+                    CornerRadius="10" Command="{Binding LogInCommand}"/>
             <Label HorizontalOptions="CenterAndExpand" FontSize="18" Margin="0, 15">
                 <Label.FormattedText>
                     <FormattedString>

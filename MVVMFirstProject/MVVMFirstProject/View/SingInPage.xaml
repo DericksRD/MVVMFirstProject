@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVMFirstProject.View.SingInPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                     WidthRequest="300">
+            <Image Source="LogoIntec.png" HeightRequest="140" Margin="0, 15"/>
+            <Entry Placeholder="Nombre:" />
+            <Entry Placeholder="Email:" />
+            <Entry Placeholder="Contraseña:" IsPassword="True" />
+            <Entry Placeholder="Confirmar contraseña" IsPassword="True"/>
+            <Button Text="SingIn" BackgroundColor="Red" TextColor="White" 
+                    CornerRadius="10" Command="{Binding SingInCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

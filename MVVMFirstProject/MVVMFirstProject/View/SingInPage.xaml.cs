@@ -1,5 +1,4 @@
-﻿using MVVMFirstProject.ViewModel;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,12 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace MVVMFirstProject.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LogInPage : ContentPage
+    public partial class SingInPage : ContentPage
     {
-        public LogInPage()
+        public SingInPage()
         {
             InitializeComponent();
-            BindingContext = new LogInViewModel();
         }
     }
 }
