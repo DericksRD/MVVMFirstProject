@@ -15,9 +15,9 @@ namespace MVVMFirstProject.Model
             }
             set 
             {
-                varName = value;
-                PropertyChanged?.Invoke(this, 
-                    new PropertyChangedEventArgs(nameof(Name)));
+                //varName = value;
+                //PropertyChanged?.Invoke(this, 
+                //    new PropertyChangedEventArgs(nameof(Name)));
             } 
         }
         public String Email

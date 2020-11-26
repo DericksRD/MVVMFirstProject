@@ -16,7 +16,7 @@ namespace MVVMFirstProject.ViewModel
         async public void SingButtonClicked()
         {
             await App.Current.MainPage.DisplayAlert("Registro completado.", "", "Ok");
-            //await App.Current.MainPage.Navigation.
+            await App.Current.MainPage.Navigation.PopAsync();
         }
     }
 }

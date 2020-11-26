@@ -3,15 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MVVMFirstProject.View.SingInPage">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
-                     WidthRequest="300">
-            <Image Source="LogoIntec.png" HeightRequest="140" Margin="0, 15"/>
-            <Entry Placeholder="Nombre:" />
-            <Entry Placeholder="Email:" />
-            <Entry Placeholder="Contraseña:" IsPassword="True" />
-            <Entry Placeholder="Confirmar contraseña" IsPassword="True"/>
-            <Button Text="SingIn" BackgroundColor="Red" TextColor="White" 
-                    CornerRadius="10" Command="{Binding SingInCommand}"/>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                        WidthRequest="300">
+                <Image Source="LogoIntec.png" HeightRequest="140" Margin="0, 15"/>
+                <Entry Placeholder="Nombre:" />
+                <Entry Placeholder="Email:" />
+                <Entry Placeholder="Contraseña:" IsPassword="True" />
+                <Entry Placeholder="Confirmar contraseña" IsPassword="True"/>
+                <Button Text="SingIn" BackgroundColor="Red" TextColor="White" 
+                        CornerRadius="10" Command="{Binding SingInCommand}"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

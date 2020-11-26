@@ -12,7 +12,7 @@ namespace MVVMFirstProject
             InitializeComponent();
 
             //MainPage = new MainPage();
-            MainPage = new HomePage();
+            MainPage = new NavigationPage(new LogInPage());
         }
 
         protected override void OnStart()

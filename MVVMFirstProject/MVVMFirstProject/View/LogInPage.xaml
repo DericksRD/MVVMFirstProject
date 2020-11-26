@@ -6,20 +6,13 @@
         <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
                      WidthRequest="300">
             <Image Source="LogoIntec.png" HeightRequest="140" Margin="0, 15"/>
-            <Entry Placeholder="Email" Text="{Binding user.Email}"/>
-            <Entry Placeholder="Password" Text="{Binding user.Password}" 
+            <Entry Placeholder="Email" Text="{Binding email}"/>
+            <Entry Placeholder="Password" Text="{Binding password}" 
                    IsPassword="True"/>
             <Button Text="LogIn" BackgroundColor="Red" TextColor="White" 
                     CornerRadius="10" Command="{Binding LogInCommand}"/>
-            <Label HorizontalOptions="CenterAndExpand" FontSize="18" Margin="0, 15">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span Text="Registro" 
-                              TextColor="Red"
-                              TextDecorations="Underline"/>
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
+            <Button Text="Registro" BackgroundColor="White" TextColor="Red"
+                    FontSize="Small" Command="{Binding RegisterCommand}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

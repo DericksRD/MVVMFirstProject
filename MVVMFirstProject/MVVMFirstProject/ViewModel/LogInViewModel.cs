@@ -1,4 +1,5 @@
 ﻿using MVVMFirstProject.Model;
+using MVVMFirstProject.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,40 +11,35 @@ namespace MVVMFirstProject.ViewModel
 {
     class LogInViewModel
     {
-        //private String email;
+        public User user1 = new User();
+        public String email { get; set; }
+        public String password { get; set; }
 
-        //public String Email 
-        //{
-        //    get
-        //    {
-        //        return email;
-        //    }
-        //    set
-        //    {
-        //        email = value;
-        //        PropertyChanged?.Invoke(this, 
-        //                        new PropertyChangedEventArgs(nameof(Email)));
-        //    }
-        //}
-        //public LogInViewModel user = new LogInViewModel();
+        /*public LogInViewModel user = new LogInViewModel();*/
+        public ICommand LogInCommand => new Command(LogButtonClicked);
+        public ICommand RegisterCommand => new Command(RegisterButtonClicked);
 
+        #region LogButtonClicked()
+        async private void LogButtonClicked()
+        {
+            //Check if there's any empty entry
+            if(string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+            {
+                await App.Current.MainPage.DisplayAlert("No se puede completar la acción",
+                    $"Debe de completar todos los campos", "Ok");
+            }else
+            {
+                await App.Current.MainPage.Navigation.PushAsync(new HomePage());
+            }
+        }
+        #endregion
 
-        //public event PropertyChangedEventHandler PropertyChanged;
-        //public ICommand LogInCommand => new Command(LogButtonClicked);
+        #region RegisterButtonClicked()
+        async public void RegisterButtonClicked()
+        {
+            await App.Current.MainPage.Navigation.PushAsync(new SingInPage());
+        }
+        #endregion
 
-        //async private void LogButtonClicked()
-        //{
-        //    //Check if there's any empty entry
-        //    if(string.IsNullOrEmpty(user.Email))
-        //        //string.IsNullOrEmpty(user.Password))
-        //    {
-        //        await App.Current.MainPage.DisplayAlert("No se puede completar la acción",
-        //            "Debe llenar todos los campos para continuar", "Ok");
-        //    }
-        //    else
-        //    {
-        //        await App.Current.MainPage.DisplayAlert("Welcome back", "", "Ok");
-        //    }
-        //}
     }
 }
