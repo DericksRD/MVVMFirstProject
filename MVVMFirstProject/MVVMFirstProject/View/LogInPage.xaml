@@ -6,8 +6,8 @@
         <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
                      WidthRequest="300">
             <Image Source="LogoIntec.png" HeightRequest="140" Margin="0, 15"/>
-            <Entry Placeholder="Email" Text="{Binding email}"/>
-            <Entry Placeholder="Password" Text="{Binding password}" 
+            <Entry Placeholder="Email" Text="{Binding Email}"/>
+            <Entry Placeholder="Password" Text="{Binding Password}" 
                    IsPassword="True"/>
             <Button Text="LogIn" BackgroundColor="Red" TextColor="White" 
                     CornerRadius="10" Command="{Binding LogInCommand}"/>
