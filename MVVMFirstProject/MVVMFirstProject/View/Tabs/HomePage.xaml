@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:locals="clr-namespace:MVVMFirstProject.View.Tabs"
+            x:Class="MVVMFirstProject.View.HomePage">
+    <!--Pages can be added as references or inline-->
+    <locals:Tab1 />
+    <locals:Tab2 />
+    <locals:Tab3 />
+    <locals:Tab4 />
+    <locals:Tab5 />
+</TabbedPage>
