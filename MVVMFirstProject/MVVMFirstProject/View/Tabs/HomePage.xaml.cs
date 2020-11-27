@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVVMFirstProject.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace MVVMFirstProject.View
         public HomePage()
         {
             InitializeComponent();
+            BindingContext = new HomeViewModel();
         }
     }
 }

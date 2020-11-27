@@ -136,4 +136,22 @@
   <ItemGroup>
     <BundleResource Include="Resources\LogoIntec.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Tareas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Pagos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Profesor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Horario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Libros.png" />
+  </ItemGroup>
 </Project>

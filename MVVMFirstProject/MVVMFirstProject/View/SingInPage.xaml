@@ -7,10 +7,10 @@
             <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
                         WidthRequest="300">
                 <Image Source="LogoIntec.png" HeightRequest="140" Margin="0, 15"/>
-                <Entry Placeholder="Nombre:" />
-                <Entry Placeholder="Email:" />
-                <Entry Placeholder="Contraseña:" IsPassword="True" />
-                <Entry Placeholder="Confirmar contraseña" IsPassword="True"/>
+                <Entry Placeholder="Nombre:" Text="{Binding Name}"/>
+                <Entry Placeholder="Email:" Text="{Binding Email}"/>
+                <Entry Placeholder="Contraseña:" IsPassword="True" Text="{Binding Password}" />
+                <Entry Placeholder="Confirmar contraseña" IsPassword="True" Text="{Binding ConfirmPassword}"/>
                 <Button Text="SingIn" BackgroundColor="Red" TextColor="White" 
                         CornerRadius="10" Command="{Binding SingInCommand}"/>
             </StackLayout>

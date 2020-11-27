@@ -17,18 +17,24 @@
             </Grid.ColumnDefinitions>
             
             <!--Content-->
-            <Button Text="Procesos académicos" Grid.Row="0" Grid.Column="0" 
-                    BackgroundColor="White" CornerRadius="10"/>
-            <Button Text="Pagos" Grid.Row="0" Grid.Column="1" 
-                    BackgroundColor="White" CornerRadius="10"/>
-            <Button Text="Reportes" Grid.Row="1" Grid.Column="0" 
-                    BackgroundColor="White" CornerRadius="10"/>
-            <Button Text="Evaluación Profesional" Grid.Row="1" Grid.Column="1" 
-                    BackgroundColor="White" CornerRadius="10"/>
-            <Button Text="Programa Asignaturas" Grid.Row="2" Grid.Column="0" 
-                    BackgroundColor="White" CornerRadius="10" />
-            <Button Text="Oferta Académica" Grid.Row="2" Grid.Column="1" 
-                    BackgroundColor="White" CornerRadius="10"/>
+            <Button Text="{Binding ProcessMenuOption.Title}" Grid.Row="0" Grid.Column="0" 
+                    BackgroundColor="White" CornerRadius="10" 
+                    ContentLayout="Top,0" Image="{Binding ProcessMenuOption.Image}" />
+            <Button Text="{Binding PaymentMenuOption.Title}" Grid.Row="0" Grid.Column="1" 
+                    BackgroundColor="White" CornerRadius="10"
+                    ContentLayout="Top,0" Image="{Binding PaymentMenuOption.Image}" />
+            <Button Text="{Binding ReportMenuOption.Title}" Grid.Row="1" Grid.Column="0" 
+                    BackgroundColor="White" CornerRadius="10"
+                    ContentLayout="Top,0" Image="{Binding ReportMenuOption.Image}"/>
+            <Button Text="{Binding TeacherTestMenuOption.Title}" Grid.Row="1" Grid.Column="1" 
+                    BackgroundColor="White" CornerRadius="10"
+                    ContentLayout="Top,0" Image="{Binding TeacherTestMenuOption.Image}"/>
+            <Button Text="{Binding ProgramMenuOption.Title}" Grid.Row="2" Grid.Column="0" 
+                    BackgroundColor="White" CornerRadius="10" 
+                    ContentLayout="Top,0" Image="{Binding ProgramMenuOption.Image}"/>
+            <Button Text="{Binding OfertMenuOption.Title}" Grid.Row="2" Grid.Column="1" 
+                    BackgroundColor="White" CornerRadius="10"
+                    ContentLayout="Top,0" Image="{Binding OfertMenuOption.Image}"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
